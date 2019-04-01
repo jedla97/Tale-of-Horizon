@@ -9,3 +9,9 @@ text base adventure
  
  school project of textbase adventure
  npc is add-on to project
+
+
+for start app  download TaleOfHorizon.jar
+use commandline and change to directory by dir to location where is TaleOfHorizon.jar located
+use command java -jar TaleOfHorizon.jar to execute file
+and you can play now
