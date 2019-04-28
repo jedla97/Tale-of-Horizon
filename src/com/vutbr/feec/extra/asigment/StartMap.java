@@ -13,9 +13,13 @@ public class StartMap extends Map {
 		int move, n = 0;
 		final int MAPNODE = 3;
 		int[] array0 = { 1, 2, 10, 98, 99 };
-		System.out.println("Story"); // TO-DO
-		// data.vypisMapArrive(mapId);
+		System.out.println("Beatiful castle is build to the sky. Surounded by city with stone walls around it."
+				+ " The peasants around city don't have much smile on their faces."
+				+ " But try to hide it from you and others travelers.");
 		if (flag == false) {
+			System.out.println(
+					"You are going slowly around the city straight to the castle. And people here live noobles live "
+							+ "like nothing ");
 			King king = new King(1, null, this.randomNumberForHp(), this.randomAge(), "King", null);
 			move = king.whatYouWant(king, gamer, data, mapId);
 			move = this.whereToGo(array0, data, MAPNODE, gamer, false, false);

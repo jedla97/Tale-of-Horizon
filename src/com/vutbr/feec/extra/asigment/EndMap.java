@@ -9,7 +9,9 @@ public class EndMap extends Map {
 
 	public int mapTale(MapDatabase data, int mapId, Gamer gamer) {
 		int gotMoney;
-		System.out.println("story");
+		System.out.println(
+				"Finally, we can see city. There is where kings and his family lives. But this huge wall is cover with spell. "
+						+ "Thats the reason why you can see only the tops of some main building");
 		MilitaryWatcher militaryWatcher = new MilitaryWatcher(1, null, this.randomNumberForHp(), this.randomAge(),
 				"MilitaryWatcher", null);
 		gotMoney = militaryWatcher.whatYouWant(militaryWatcher, gamer, data, mapId);

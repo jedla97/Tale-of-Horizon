@@ -34,8 +34,8 @@ public class OneNodeWithout extends Map {
 		switch (mapId) {
 		case 1:// boss
 			int[] array1 = { 0, 98, 99 };
-			System.out.println("Story"); // TO-DO
-			// data.vypisMapArrive(mapId);
+			System.out.println(
+					"Beatiful sight of sun dawn at the end of sea. But something more dangerous is under water ");
 			Boss boss = new Boss(1, null, 230, null);
 			move = boss.whatYouWant(boss, gamer);
 
@@ -47,8 +47,7 @@ public class OneNodeWithout extends Map {
 			return move;
 		case 3: // 2
 			int[] array3 = { 2, 98, 99 };
-			System.out.println("Story"); // TO-DO
-			// data.vypisMapArrive(mapId);
+			System.out.println("Dark place to live but some trace of live is here in these small mountains");
 			move = this.spawn(gamer, mapId, data);
 			if (move == -1) {
 				System.out.println(gamer.getNickname() + " must start from scrach because you have die");
@@ -58,8 +57,8 @@ public class OneNodeWithout extends Map {
 			return move;
 		case 7: // 6
 			int[] array7 = { 6, 98, 99 };
-			System.out.println("Story"); // TO-DO
-			// data.vypisMapArrive(mapId);
+			System.out.println("The small seaport with red-white stripe lighthouse and wall of stones around. "
+					+ "On the sea you see ships big or small with merchants, mercenaries and pirates");
 			MilitaryWatcher militaryWatcher1 = new MilitaryWatcher((rand.nextInt(2) + 1), null,
 					this.randomNumberForHp(), this.randomAge(), "MilitaryWatcher", null);
 			move = militaryWatcher1.whatYouWant(militaryWatcher1, gamer, data, mapId);
@@ -78,8 +77,9 @@ public class OneNodeWithout extends Map {
 			return move;
 		case 8: // 6
 			int[] array8 = { 6, 98, 99 };
-			System.out.println("Story"); // TO-DO
-			// data.vypisMapArrive(mapId);
+			System.out.println("In the small bay is located Old Wase know as pirates dream."
+					+ "Nobody know how many people die here but all well-know emperors of the seas was born here."
+					+ " But this unlawful city is well prospered");
 			MilitaryWatcher militaryWatcher = new MilitaryWatcher((rand.nextInt(2) + 1), null, this.randomNumberForHp(),
 					this.randomAge(), "MilitaryWatcher", null);
 			move = militaryWatcher.whatYouWant(militaryWatcher, gamer, data, mapId);
@@ -99,8 +99,8 @@ public class OneNodeWithout extends Map {
 			return move;
 		case 15: // 13
 			int[] array15 = { 13, 98, 99 };
-			System.out.println("Story"); // TO-DO
-			// data.vypisMapArrive(mapId);
+			System.out.println(
+					"What expected from Nadel beach. Beatiful sand ready for relax and some sporting matches. On the long distance can be seen ships.");
 			move = this.spawn(gamer, mapId, data);
 			if (move == -1) {
 				System.out.println(gamer.getNickname() + " must start from scrach because you have die");
