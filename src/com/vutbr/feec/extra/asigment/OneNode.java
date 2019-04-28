@@ -20,8 +20,8 @@ public class OneNode extends Map {
 		switch (mapId) {
 		case 11:
 			int[] array11 = { 12, 98, 99 };
-			System.out.println("Story"); // TO-DO
-			// data.vypisMapArrive(mapId);
+			System.out.println(
+					"Beatiful longlife tree showing on small islands conected by bridges. In the air is smell of ocean");
 			move = this.spawn(gamer, mapId, data);
 			if (move == -1) {
 				System.out.println(gamer.getNickname() + " must start from scrach because you have die");
@@ -31,8 +31,9 @@ public class OneNode extends Map {
 			return move;
 		case 12:
 			int[] array12 = { 13, 98, 99 };
-			System.out.println("Story"); // TO-DO
-			// data.vypisMapArrive(mapId);
+			System.out.println(
+					"The 1000 old demolished bridge. Every step is dangerous because some strong adventures die here."
+							+ " These who survived saying be always at attention never know when monster attack.");
 			move = this.spawn(gamer, mapId, data);
 			if (move == -1) {
 				System.out.println(gamer.getNickname() + " must start from scrach because you have die");

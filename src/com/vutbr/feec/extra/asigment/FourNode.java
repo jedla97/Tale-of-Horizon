@@ -18,8 +18,9 @@ public class FourNode extends Map {
 		switch (mapId) {
 		case 14: // 9 10 13 16
 			int[] array14 = { 9, 10, 13, 16, 98, 99 };
-			System.out.println("Story"); // TO-DO
-			// data.vypisMapArrive(mapId);
+			System.out.println(
+					"The beatiful crystal clear water where lots of fish live. In around forests live wild animals and monsters. "
+							+ "But this land scenery is heaven to die");
 			move = this.spawn(gamer, mapId, data);
 			if (move == -1) {
 				System.out.println(gamer.getNickname() + " must start from scrach because you have die");
