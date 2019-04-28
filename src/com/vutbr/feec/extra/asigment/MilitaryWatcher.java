@@ -3,7 +3,7 @@ package com.vutbr.feec.extra.asigment;
 import java.util.Random;
 
 public class MilitaryWatcher extends Person {
-
+	// constructor for 2 type of military watcher
 	public MilitaryWatcher(int id, String name, int hp, int age, String calling, String[] options) {
 		super(id, name, hp, age, calling, options);
 		Random rand = new Random();
@@ -25,6 +25,8 @@ public class MilitaryWatcher extends Person {
 
 	}
 
+	// conversation with player + get in last location 100 coins and on different
+	// place is needed 0+ coins all is rng
 	public int whatYouWant(MilitaryWatcher militaryWatcher, Gamer gamer, MapDatabase data, int mapId) {
 
 		int helpId;

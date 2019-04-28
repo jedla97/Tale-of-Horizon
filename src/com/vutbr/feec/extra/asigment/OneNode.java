@@ -14,6 +14,7 @@ public class OneNode extends Map {
 		}
 	}
 
+	// whats happening on the map
 	public int mapTale(MapDatabase data, int mapId, Gamer gamer) {
 		int move;
 		final int MAPNODE = 1;
@@ -32,8 +33,8 @@ public class OneNode extends Map {
 		case 12:
 			int[] array12 = { 13, 98, 99 };
 			System.out.println(
-					"The 1000 old demolished bridge. Every step is dangerous because some strong adventures die here."
-							+ " These who survived saying be always at attention never know when monster attack.");
+					"The 1000 old demolished bridge. Every step is dangerous because some strong adventures die here.\n"
+							+ "These who survived saying be always at attention never know when monster attack.");
 			move = this.spawn(gamer, mapId, data);
 			if (move == -1) {
 				System.out.println(gamer.getNickname() + " must start from scrach because you have die");

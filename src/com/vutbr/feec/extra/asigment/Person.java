@@ -39,6 +39,7 @@ public class Person extends Npc {
 		this.options = options;
 	}
 
+	// calling of npc
 	public String whatIsMyCalling(Person person) {
 		String mil = "MilitaryWatch";
 		String adv = "Adventure";
@@ -65,6 +66,7 @@ public class Person extends Npc {
 		}
 	}
 
+	// print options for npc with change after 1st question
 	public int printOptions(int numberOfOptions, int taskId) {
 		@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);

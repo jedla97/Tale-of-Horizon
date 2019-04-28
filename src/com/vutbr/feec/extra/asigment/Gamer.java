@@ -14,6 +14,7 @@ public class Gamer extends Npc {
 
 	}
 
+	// damage generator
 	public int damage() {
 		Random rand = new Random();
 		int dmg = rand.nextInt(40);
@@ -30,6 +31,7 @@ public class Gamer extends Npc {
 		return "Gamer [nickname=" + nickname + ", money=" + money + "]";
 	}
 
+	// how many player have
 	public void moneyBalance() {
 		System.out.println("Hmmm look.\nI have " + money + " silvers");
 	}

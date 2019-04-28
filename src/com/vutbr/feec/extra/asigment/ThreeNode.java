@@ -28,14 +28,15 @@ public class ThreeNode extends Map {
 		}
 	}
 
+	// whats happening on the map
 	public int mapTale(MapDatabase data, int mapId, Gamer gamer) {
 		int move, n = 0;
 		final int MAPNODE = 3;
 		switch (mapId) {
 		case 2: // 3 4 5
 			int[] array2 = { 3, 4, 5, 98, 99 };
-			System.out.println("The vulcano who every body know but noone has been brave to name it. "
-					+ "Ahh wait someone has been but nobody know that name that is why is unknow. "
+			System.out.println("The vulcano who every body know but noone has been brave to name it.\n"
+					+ "Ahh wait someone has been but nobody know that name that is why is unknow.\n"
 					+ "The prophecy told story one day this mass of energy explode and destroy hole word but no worry in near time is it ok");
 			move = this.spawn(gamer, mapId, data);
 			if (move == -1) {
@@ -59,7 +60,7 @@ public class ThreeNode extends Map {
 		case 5: // 4 6 9
 			int[] array5 = { 4, 6, 9, 98, 99 };
 			System.out.println(
-					"Whatever you look you can se hills and forest. Oh wait you don't see nothing but trees than that is true. "
+					"Whatever you look you can se hills and forest. Oh wait you don't see nothing but trees than that is true.\n"
 							+ "This forest is like maze but with litle orientation is no problem to go where you want.");
 			move = this.spawn(gamer, mapId, data);
 			if (move == -1) {
@@ -71,7 +72,7 @@ public class ThreeNode extends Map {
 		case 6: // 7 8 9
 			int[] array6 = { 7, 8, 9, 98, 99 };
 			System.out.println(
-					"The city in the jungle what else can say. The ancient nation live here but long time they left. "
+					"The city in the jungle what else can say. The ancient nation live here but long time they left.\n"
 							+ "Nobody know where thye live now even when they live.");
 			move = this.spawn(gamer, mapId, data);
 			if (move == -1) {
@@ -83,7 +84,7 @@ public class ThreeNode extends Map {
 		case 10: // 11 13 14
 			int[] array10 = { 11, 13, 14, 98, 99 };
 			System.out.println(
-					"Not long time ago was here big fire. But the leaders of the city still hold the rights and laws. "
+					"Not long time ago was here big fire. But the leaders of the city still hold the rights and laws.\n"
 							+ "This few building left here. lots of citizens left but the loyal still serve the city");
 			Random rand = new Random();
 			MilitaryWatcher militaryWatcher = new MilitaryWatcher((rand.nextInt(2) + 1), null, this.randomNumberForHp(),
@@ -105,7 +106,7 @@ public class ThreeNode extends Map {
 		case 13: // 14 15 16
 			int[] array13 = { 14, 15, 16, 98, 99 };
 			System.out.println(
-					"The ruin as the name say the Cianu family lived here. But after that accident nobody they disapere. "
+					"The ruin as the name say the Cianu family lived here. But after that accident nobody they disapere.\n"
 							+ "Hey, hold up you don't know about that big accident. Even now the goose bumps is on my whole body");
 			move = this.spawn(gamer, mapId, data);
 			if (move == -1) {
