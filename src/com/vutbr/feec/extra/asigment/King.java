@@ -3,7 +3,7 @@ package com.vutbr.feec.extra.asigment;
 import java.util.Random;
 
 public class King extends Person {
-
+	// constructor for 2 type of kings
 	public King(int id, String name, int hp, int age, String calling, String[] options) {
 		super(id, name, hp, age, calling, options);
 		switch (id) {
@@ -21,6 +21,8 @@ public class King extends Person {
 		}
 	}
 
+	// conversation with player start location and end location is where kings
+	// appear
 	public int whatYouWant(King king, Gamer gamer, MapDatabase data, int mapId) {
 
 		int helpId;

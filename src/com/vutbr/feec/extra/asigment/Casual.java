@@ -4,7 +4,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Casual extends Monster {
-
+	// constructor for all monsters
 	public Casual(int id, String name, int hp, String[] skills) {
 		super(id, name, hp, skills);
 		switch (id) {
@@ -74,7 +74,7 @@ public class Casual extends Monster {
 
 	}
 
-	// method for what do you want in the location and return player decision
+	// method for what do you want to do in the location and return player decision
 	public int whatYouWant(Casual casual, Gamer gamer) {
 		String[] optionsArray = { "Fight ", "Qietly move to next location " };
 		String name = casual.getName();
@@ -151,7 +151,7 @@ public class Casual extends Monster {
 		return dmg;
 	}
 
-	// method for boss drop 33
+	// method for drop
 	@Override
 	public int randomDrop() {
 		Random rand = new Random();

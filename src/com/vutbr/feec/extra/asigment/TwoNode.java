@@ -14,6 +14,7 @@ public class TwoNode extends Map {
 		}
 	}
 
+	// whats happening on the map
 	public int mapTale(MapDatabase data, int mapId, Gamer gamer) {
 		int move;
 		final int MAPNODE = 2;
@@ -21,8 +22,8 @@ public class TwoNode extends Map {
 		case 9: // 5 14
 			int[] array9 = { 5, 14, 98, 99 };
 			System.out.println(
-					"The biggest mountain in the world. The top is shrouded in the clouds. Nobody never been on the top."
-							+ " People who try to go to top never come back down. Some people say the monster live there.");
+					"The biggest mountain in the world. The top is shrouded in the clouds. Nobody never been on the top.\n"
+							+ "People who try to go to top never come back down. Some people say the monster live there.");
 			move = this.spawn(gamer, mapId, data);
 			if (move == -1) {
 				System.out.println(gamer.getNickname() + " must start from scrach because you have die");
@@ -33,7 +34,7 @@ public class TwoNode extends Map {
 		case 16: // 14 17
 			int[] array16 = { 14, 17, 98, 99 };
 			System.out.println("The ship start being very dangerous place to travel. "
-					+ "This whirpool is not dangerous as nature myth but also as home of one of the most dangerous spieces.");
+					+ "This whirpool is not dangerous as nature myth but also as home of one of the most dangerous spieces.\n");
 			Boss boss = new Boss(3, null, 270, null);
 			move = boss.whatYouWant(boss, gamer);
 			if (move == -1) {

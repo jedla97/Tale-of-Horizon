@@ -7,10 +7,11 @@ public class EndMap extends Map {
 		// TODO Auto-generated constructor stub
 	}
 
+	// whats happening on the map
 	public int mapTale(MapDatabase data, int mapId, Gamer gamer) {
 		int gotMoney;
 		System.out.println(
-				"Finally, we can see city. There is where kings and his family lives. But this huge wall is cover with spell. "
+				"Finally, we can see city. There is where kings and his family lives. But this huge wall is cover with spell.\n"
 						+ "Thats the reason why you can see only the tops of some main building");
 		MilitaryWatcher militaryWatcher = new MilitaryWatcher(1, null, this.randomNumberForHp(), this.randomAge(),
 				"MilitaryWatcher", null);

@@ -6,20 +6,19 @@ public class StartMap extends Map {
 
 	public StartMap(int id, String name) {
 		super(id = 0, name);
-		// TODO Auto-generated constructor stub
 	}
 
 	public int mapTale(MapDatabase data, int mapId, Gamer gamer, boolean flag) {
 		int move, n = 0;
 		final int MAPNODE = 3;
 		int[] array0 = { 1, 2, 10, 98, 99 };
-		System.out.println("Beatiful castle is build to the sky. Surounded by city with stone walls around it."
-				+ " The peasants around city don't have much smile on their faces."
-				+ " But try to hide it from you and others travelers.");
+		System.out.println("Beatiful castle is build to the sky. Surounded by city with stone walls around it.\n"
+				+ "The peasants around city don't have much smile on their faces.\n"
+				+ "But try to hide it from you and others travelers.");
 		if (flag == false) {
 			System.out.println(
-					"You are going slowly around the city straight to the castle. And people here live noobles live "
-							+ "like nothing ");
+					"You are going slowly around the city straight to the castle. And people here live as noobles live\n"
+							+ "like nothing.");
 			King king = new King(1, null, this.randomNumberForHp(), this.randomAge(), "King", null);
 			move = king.whatYouWant(king, gamer, data, mapId);
 			move = this.whereToGo(array0, data, MAPNODE, gamer, false, false);

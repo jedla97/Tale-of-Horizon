@@ -12,6 +12,7 @@ public class FourNode extends Map {
 		}
 	}
 
+	// whats happening on the map
 	public int mapTale(MapDatabase data, int mapId, Gamer gamer) {
 		int move;
 		final int MAPNODE = 4;
@@ -19,7 +20,7 @@ public class FourNode extends Map {
 		case 14: // 9 10 13 16
 			int[] array14 = { 9, 10, 13, 16, 98, 99 };
 			System.out.println(
-					"The beatiful crystal clear water where lots of fish live. In around forests live wild animals and monsters. "
+					"The beatiful crystal clear water where lots of fish live. In around forests live wild animals and monsters.\n"
 							+ "But this land scenery is heaven to die");
 			move = this.spawn(gamer, mapId, data);
 			if (move == -1) {

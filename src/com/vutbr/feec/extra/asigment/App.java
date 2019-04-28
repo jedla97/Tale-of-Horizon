@@ -19,7 +19,6 @@ public class App {
 		String nickname;
 		boolean flag = false;
 		int helpId1 = 0;
-		int helpId2 = 0;
 		int gamerHp = 500;
 		int gamerMoney = 0;
 		@SuppressWarnings("resource")
@@ -70,70 +69,82 @@ public class App {
 		data.database.add(m18);
 		/*
 		 * movement mechanic between maps + case 99 for end program case 98 for start
-		 * over from scratch case 97 is when player wrong move that doesn't exist
 		 */
 		while (helpId1 != 18) {
 
 			switch (helpId1) {
 			case 0:
-				helpId2 = helpId1;
+				data.vypisMapArrive(helpId1);
 				helpId1 = m1.mapTale(data, helpId1, gamer, flag);
 				flag = true;
 				break;
 			case 1:
-				helpId2 = helpId1;
+				data.vypisMapArrive(helpId1);
 				helpId1 = m2.mapTale(data, helpId1, gamer);
 				break;
 			case 2:
+				data.vypisMapArrive(helpId1);
 				helpId1 = m3.mapTale(data, helpId1, gamer);
 				break;
 			case 3:
+				data.vypisMapArrive(helpId1);
 				helpId1 = m4.mapTale(data, helpId1, gamer);
 				break;
 			case 4:
+				data.vypisMapArrive(helpId1);
 				helpId1 = m5.mapTale(data, helpId1, gamer);
 				break;
 			case 5:
+				data.vypisMapArrive(helpId1);
 				helpId1 = m6.mapTale(data, helpId1, gamer);
 				break;
 			case 6:
+				data.vypisMapArrive(helpId1);
 				helpId1 = m7.mapTale(data, helpId1, gamer);
 				break;
 			case 7:
+				data.vypisMapArrive(helpId1);
 				helpId1 = m8.mapTale(data, helpId1, gamer);
 				break;
 			case 8:
+				data.vypisMapArrive(helpId1);
 				helpId1 = m9.mapTale(data, helpId1, gamer);
 				break;
 			case 9:
+				data.vypisMapArrive(helpId1);
 				helpId1 = m10.mapTale(data, helpId1, gamer);
 				break;
 			case 10:
+				data.vypisMapArrive(helpId1);
 				helpId1 = m11.mapTale(data, helpId1, gamer);
 				break;
 			case 11:
+				data.vypisMapArrive(helpId1);
 				helpId1 = m12.mapTale(data, helpId1, gamer);
 				break;
 			case 12:
+				data.vypisMapArrive(helpId1);
 				helpId1 = m13.mapTale(data, helpId1, gamer);
 				break;
 			case 13:
+				data.vypisMapArrive(helpId1);
 				helpId1 = m14.mapTale(data, helpId1, gamer);
 				break;
 			case 14:
+				data.vypisMapArrive(helpId1);
 				helpId1 = m15.mapTale(data, helpId1, gamer);
 				break;
 			case 15:
+				data.vypisMapArrive(helpId1);
 				helpId1 = m16.mapTale(data, helpId1, gamer);
 				break;
 			case 16:
+				data.vypisMapArrive(helpId1);
 				helpId1 = m17.mapTale(data, helpId1, gamer);
 				break;
 			case 17:
+				data.vypisMapArrive(helpId1);
 				helpId1 = m18.mapTale(data, helpId1, gamer);
-				break;
-			case 97: // for new try
-				helpId1 = helpId2;
 				break;
 			case 98:
 				helpId1 = 0;

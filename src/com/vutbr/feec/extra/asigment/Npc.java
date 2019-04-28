@@ -41,7 +41,6 @@ public class Npc {
 		this.id = id;
 	}
 
-
 // hp generator
 	public int randomHp() {
 		Random rand = new Random();

@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class Boss extends Monster {
 	private String specialSkill;
 
+	// constructor for 3 boss
 	public Boss(int id, String name, int hp, String[] skills) {
 		super(id, name, hp, skills);
 		switch (id) {

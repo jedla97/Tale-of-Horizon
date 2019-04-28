@@ -7,6 +7,7 @@ public class Adventure extends Person {
 	private String[] weapons;
 	private String[] attacks;
 
+	// constructor for 3 type of adventure
 	public Adventure(int id, String name, int hp, int age, String calling, String[] options) {
 		super(id, name, hp, age, calling, options);
 		Random rand = new Random();
@@ -41,6 +42,7 @@ public class Adventure extends Person {
 
 	}
 
+	// conversation with player + fight with adventure
 	public int whatYouWant(Adventure adventure, Gamer gamer, MapDatabase data, int mapId) {
 
 		Random rand = new Random();
@@ -168,6 +170,7 @@ public class Adventure extends Person {
 		}
 	}
 
+	// fight mechanic with adventure
 	public int Fight(Adventure adventure, Gamer gamer, int weaponNumber, boolean flag) {
 		String name = adventure.getCalling();
 		int help;
@@ -212,11 +215,13 @@ public class Adventure extends Person {
 
 	}
 
+	// random weapon of adventure using
 	public int chooseWeapon(Adventure adventure) {
 		Random rand = new Random();
 		return rand.nextInt(adventure.getWeapons().length);
 	}
 
+	// random name of attack what adventure using
 	public void usedAttack(Adventure adventure, int weapon) {
 		String[] helpAttack = adventure.getAttacks();
 		String[] helpWeapon = adventure.getWeapons();

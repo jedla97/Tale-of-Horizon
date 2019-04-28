@@ -6,6 +6,7 @@ public class Barthender extends Person {
 	private String[] drinks;
 	private String[] food;
 
+	// construcor for barthender
 	public Barthender(int id, String name, int hp, int age, String calling, String[] options) {
 		super(id, name, hp, age, calling, options);
 		switch (id) {
@@ -26,6 +27,7 @@ public class Barthender extends Person {
 		}
 	}
 
+	// conversation with player + get some drink and food
 	public void whatYouWant(Barthender barthender, Gamer gamer, MapDatabase data, int mapId) {
 		int option, helpMoney, chargeMoney, helpHp, taskId = 0;
 		Random rand = new Random();
@@ -146,6 +148,7 @@ public class Barthender extends Person {
 		return 0;
 	}
 
+	// generate name of product
 	public void product(int forWhat) {
 		String[] drink = this.getDrinks();
 		String[] food = this.getFood();
